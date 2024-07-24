@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
+    <?php
+define('_MN_USER', '45ddee2381cf60009bbbca4ba545b541583cea18');
+require_once($_SERVER['DOCUMENT_ROOT'].'/'._MN_USER.'/magenet.php');
+$magenet = new Magenet();
+echo $magenet->getLinks();
+?
   </head>
   <body>
     <header>
